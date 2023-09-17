@@ -3557,7 +3557,7 @@ class PlayState extends MusicBeatState
 
 					// YELLOW
 
-					case 'Yellow Band Sing HIT 1' | '1':
+					case 'Yellow Band Sing HIT 1' | '6':
 						yellow.animation.play('hit 1', true);
 						yellow.offset.set(-115,2);
 						new FlxTimer().start(1, function(tmr:FlxTimer) {
@@ -3566,7 +3566,7 @@ class PlayState extends MusicBeatState
 						});
 						trace("it workie");
 
-					case 'Yellow Band Sing HIT 2' | '2':
+					case 'Yellow Band Sing HIT 2' | '7':
 						yellow.animation.play('hit 2', true);
 						yellow.offset.set(-3,0);
 						new FlxTimer().start(1, function(tmr:FlxTimer) {
@@ -3576,7 +3576,7 @@ class PlayState extends MusicBeatState
 						trace("it workie");
 
 						//GROUPS RED AND BLUE
-					case 'Red and Blue Band Sing HIT 1' | '7':
+					case 'Red and Blue Band Sing HIT 1' | '8':
 						red.animation.play('hit 1', true);
 						red.offset.set(-115,2);
 						blue.animation.play('hit 1', true);
@@ -3588,7 +3588,7 @@ class PlayState extends MusicBeatState
 							blue.offset.set(0,0);
 						});
 
-					case 'Red and Blue Band Sing HIT 2' | '8':
+					case 'Red and Blue Band Sing HIT 2' | '9':
 						red.animation.play('hit 2', true);
 						red.offset.set(-3,0);
 						blue.animation.play('hit 2', true);
@@ -3601,7 +3601,7 @@ class PlayState extends MusicBeatState
 						});
 
 						//GROUPS RED AND GREEN
-					case 'Red and Green Band Sing HIT 1' | '9':
+					case 'Red and Green Band Sing HIT 1' | '10':
 						red.animation.play('hit 1', true);
 						red.offset.set(-115,2);
 						green.animation.play('hit 1', true);
@@ -3611,7 +3611,7 @@ class PlayState extends MusicBeatState
 							green.animation.play('green idle', true);
 						});
 
-					case 'Red and Green Band Sing HIT 2' | '10':
+					case 'Red and Green Band Sing HIT 2' | '11':
 						red.animation.play('hit 2', true);
 						red.offset.set(-3,0);
 						green.animation.play('hit 2', true);
@@ -3622,7 +3622,7 @@ class PlayState extends MusicBeatState
 						});
 
 						//GREEN AND BLUE
-					case 'Green and Blue Band Sing HIT 1' | '11':
+					case 'Green and Blue Band Sing HIT 1' | '12':
 						green.animation.play('hit 1', true);
 						blue.animation.play('hit 1', true);
 						blue.offset.set(3,0);
@@ -3631,7 +3631,7 @@ class PlayState extends MusicBeatState
 							blue.animation.play('blue idle', true);
 							blue.offset.set(0,0);
 						});
-					case 'Green and Blue Band Sing HIT 2' | '12':
+					case 'Green and Blue Band Sing HIT 2' | '13':
 						green.animation.play('hit 2', true);
 						blue.animation.play('hit 2', true);
 						blue.offset.set(19,19);
