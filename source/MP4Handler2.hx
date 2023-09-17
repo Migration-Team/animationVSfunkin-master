@@ -6,7 +6,7 @@ import flixel.FlxState;
 import flixel.util.FlxColor;
 import flixel.util.FlxTimer;
 import openfl.events.Event;
-import vlc.VlcBitmap;
+import vlc.bitmap.VlcBitmap;
 
 // THIS IS FOR TESTING
 // DONT STEAL MY CODE >:(
@@ -61,8 +61,10 @@ class MP4Handler2
 		else
 			bitmap.repeat = 0;
 
+		#if windows
 		bitmap.inWindow = isWindow;
 		bitmap.fullscreen = isFullscreen;
+		#end
 
 		FlxG.addChildBelowMouse(bitmap);
 		bitmap.play(checkFile(path));
