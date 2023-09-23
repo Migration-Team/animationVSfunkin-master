@@ -49,12 +49,13 @@
 	<define name="ACHIEVEMENTS_ALLOWED" />
 	<define name="VIDEOS_ALLOWED" if="web || windows || android" unless="32bits"/>
 
-	<!-- DONT ENABLE THIS -->
-	<define name="CHECK_FOR_UPDATES" if="desktop || android"/>
-
 	<!-- <define name="PRELOAD_ALL" /> -->
 	<define name="PRELOAD_ALL" unless="web" />
 	<define name="NO_PRELOAD_ALL" unless="PRELOAD_ALL"/>
+
+	
+	<!-- DONT ENABLE THIS -->
+	<define name="CHECK_FOR_UPDATES" if="desktop officialBuild"/>
 	
 	<library name="videos"        preload="true" />
 	<section if="PRELOAD_ALL">
@@ -155,6 +156,8 @@
 		__________________________ -->
 	<config:android permission="android.permission.READ_EXTERNAL_STORAGE" if="android"/>
 	<config:android permission="android.permission.WRITE_EXTERNAL_STORAGE" if="android"/>
+	<config:android gradle-version="7.5.1" />
+	<config:android gradle-plugin="7.3.1" />
 	<!-- _________________________________ Custom _______________________________ -->
 
 	<!--Place custom nodes like icons here (higher priority to override the HaxeFlixel icon)-->
